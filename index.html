@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smart Calculator with history, keyboard support and dark mode built using HTML, CSS and JavaScript">
+  <title>Smart Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <header class="top">
+      <h1>Smart Calculator</h1>
+      <div class="top-buttons">
+        <button id="history-toggle" class="icon-btn" aria-label="Show history" title="History">🕘</button>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+      </div>
+    </header>
+
+    <section class="screen" aria-live="polite">
+      <div id="preview" class="preview"></div>
+      <div id="display" class="display">0</div>
+    </section>
+
+    <section id="keypad" class="keypad" aria-label="Calculator keys">
+      <button class="key fn" data-action="clear">AC</button>
+      <button class="key fn" data-action="paren" data-value="(">(</button>
+      <button class="key fn" data-action="paren" data-value=")">)</button>
+      <button class="key fn" data-action="backspace" aria-label="Backspace">⌫</button>
+
+      <button class="key" data-action="digit" data-value="7">7</button>
+      <button class="key" data-action="digit" data-value="8">8</button>
+      <button class="key" data-action="digit" data-value="9">9</button>
+      <button class="key op" data-action="operator" data-value="÷">÷</button>
+
+      <button class="key" data-action="digit" data-value="4">4</button>
+      <button class="key" data-action="digit" data-value="5">5</button>
+      <button class="key" data-action="digit" data-value="6">6</button>
+      <button class="key op" data-action="operator" data-value="×">×</button>
+
+      <button class="key" data-action="digit" data-value="1">1</button>
+      <button class="key" data-action="digit" data-value="2">2</button>
+      <button class="key" data-action="digit" data-value="3">3</button>
+      <button class="key op" data-action="operator" data-value="-">−</button>
+
+      <button class="key" data-action="digit" data-value="0">0</button>
+      <button class="key" data-action="dot">.</button>
+      <button class="key fn" data-action="percent">%</button>
+      <button class="key op" data-action="operator" data-value="+">+</button>
+
+      <button class="key equals" data-action="equals">=</button>
+    </section>
+
+    <section id="history-panel" class="history hidden" aria-label="History">
+      <div class="history-head">
+        <h2>History</h2>
+        <button id="clear-history" class="link-btn">Clear</button>
+      </div>
+      <ul id="history-list"></ul>
+      <p id="history-empty" class="history-empty">No calculations yet.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

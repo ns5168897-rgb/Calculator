@@ -1,0 +1,39 @@
+# Smart To-Do List
+
+An interactive, responsive To-Do List built with **HTML, CSS and JavaScript** (no libraries) as a mini project in my internship learning phase.
+
+## Features
+- Add tasks with **priority** (Low / Medium / High) and **due date**
+- **Edit** a task (pencil button or double-click), press Enter to save, Esc to cancel
+- Mark tasks as done, delete tasks, **clear completed**, delete all
+- **Search**, **filter** (All / Active / Done) and **sort** (Newest / Due date / Priority)
+- **Overdue** tasks are highlighted in red
+- **Progress bar** with percentage of completed tasks
+- **Dark mode** (remembers your choice)
+- Data is saved in the browser (localStorage), so it stays after refresh
+- Input validation, duplicate check, accessible labels, responsive layout
+
+## Concepts Practiced
+- Semantic HTML and accessibility (labels, aria attributes)
+- CSS variables, Flexbox, media queries, animations, theming
+- DOM manipulation and event handling
+- Arrays and objects: `map`, `filter`, `sort`, `some`, `forEach`
+- Date handling, `localStorage` with JSON and error handling
+- Security: `textContent` instead of `innerHTML` for user input
+
+## How to Run
+1. Download or clone this repository
+2. Open `index.html` in any browser
+
+## Project Structure
+```
+todo-app/
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+## Author
+Neetu Singh, B.Tech CSE, AKS University
+GitHub: [ns5168897-rgb](https://github.com/ns5168897-rgb)
